@@ -25,7 +25,7 @@ export default function Home() {
   const addtask=async ()=>{
     setLoading(true);
     try {
-      await axios.post(`${baseUrl}/task/add`,{title,desc},{headers:{'Content-Type': 'application/json'},withCredentials:true});
+      await axios.post(`${baseUrl}/task/add`,{title,desc},{headers:{'Content-Type': 'application/json'},withCredentials:true});      
       toast.success("Task added successfully");          
       setTasks((arr)=> [...arr,{title,desc}])
       setLoading(()=> false)         
