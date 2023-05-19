@@ -1,0 +1,36 @@
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // border: 2px solid rgb(4, 224, 23);
+    // min-height: 80vh;
+    #add-task{
+        // border-bottom: 1px solid rgba(113, 113, 113, 0.33);
+        margin: 4rem 0rem 2rem 0rem;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 96%;
+        #input-container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            // border: 2px solid blue;
+            input{
+                padding: 0.2rem 0.5rem;
+                font-size: 1.3rem;
+                width: 30rem;
+                margin-bottom: 1.3rem;
+                border-radius: 0.3rem;
+                border: 2px solid rgb(146, 145, 145);
+            }
+        }
+        #input-submit{
+            margin-bottom: 1.5rem;                
+        }
+    }
+}
