@@ -18,7 +18,7 @@ function App() {
 
   useEffect(()=>{
       axios.get(`${baseUrl}/user/me`,{withCredentials:true}).then(({data})=> setAuthenticated(data.success)).catch((e)=> console.log(e))
-    },[]) // eslint-disable-line react-hooks/exhaustive-deps
+    },[])
   
   return (
     <div className="App">
