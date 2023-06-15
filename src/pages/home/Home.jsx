@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/task/all`, { withCredentials: true })
+      .get(`${baseUrl}/task/all`, { withCredentials: true,headers: { 'Content-Type': 'application/json' } })
       .then(({ data }) => {
         setTasks(data.tasks);
       })
