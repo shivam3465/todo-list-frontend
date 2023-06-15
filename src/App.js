@@ -10,7 +10,7 @@ import axios from "axios";
 import { ToastContainer} from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 
-export const baseUrl ='https://backend-todolist-t9wv.onrender.com/api/v1'
+export const baseUrl ='https://backend-todolist-lac.vercel.app/api/v1'
 
 
 function App() {
