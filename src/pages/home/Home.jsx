@@ -25,6 +25,10 @@ export default function Home() {
   }, []);
 
   const addtask = async () => {
+    if(!title || !desc){
+      toast.error("Please write title and description ");
+      return;
+    }
     setLoading(true);
     try {
       const { data } = await axios.post(
